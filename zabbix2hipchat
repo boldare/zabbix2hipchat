@@ -1,0 +1,18 @@
+#!/bin/bash
+# @author michal.organek@xsolve.pl
+    
+TO=$1
+SUBJECT=$2
+BODY=$3
+KEY=<key>
+ROOM_NAME=<room name>
+FROM_LABEL=Zabbix
+
+COLOR=yellow
+if [ "$SUBJECT" == "OK" ] ;then
+    COLOR=green
+elif [ "$SUBJECT" == "PROBLEM" ] ;then
+    COLOR=red
+fi
+
+echo "$BODY" | /usr/local/bin/hipchat_room_message -t "$KEY" -r "$ROOM_NAME" -f "$FROM_LABEL" -c "$COLOR"
