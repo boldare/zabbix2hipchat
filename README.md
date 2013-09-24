@@ -23,7 +23,7 @@ W roli tego pierwszego użyjemy skryptu ze strony  [https://github.com/hipchat/h
 
 Pobieramy i umieszczamy plik z kodem w ``/usr/local/bin/hipchat_room_message``.
 
-    wget https://github.com/hipchat/hipchat-cli/blob/master/hipchat_room_message
+    wget https://raw.github.com/hipchat/hipchat-cli/master/hipchat_room_message
     # lub
     git clone https://github.com/hipchat/hipchat-cli.git .
     
@@ -34,7 +34,7 @@ Pobieramy i umieszczamy plik z kodem w ``/usr/local/bin/hipchat_room_message``.
 Następnie pobieramy drugi skrypt (``zabbix2hipchat``), umieszczamy go w katalogu skryptów notyfikacji Zabbixa ``/etc/zabbix/alert.d/`` i nadajemy atrybut wykonywalności (``chmod +x``).
 
 
-    wget https://github.com/f4il/zabbix2hipchat/blob/master/zabbix2hipchat
+    wget https://raw.github.com/xsolve-pl/zabbix2hipchat/master/zabbix2hipchat
     # lub
     git clone git@github.com:f4il/zabbix2hipchat.git .
     
